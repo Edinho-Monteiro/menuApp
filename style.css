@@ -1,0 +1,223 @@
+* {
+  box-sizing: border-box;
+}
+
+html, body, h1 {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color:beige;
+}
+
+header {
+  margin: 0;
+  padding: 0;
+  /* height: 60px; */
+  position: sticky;
+  background: linear-gradient(to right, #36240f, #654C30, #36240f);      
+  /* background-color: #654C30; */
+  top: 0;
+  z-index: 2;
+  box-shadow: 2px 3px 15px 2px rgba(58, 34, 7, 0.329);    
+}
+
+.nomeAplicativo {
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  background-color:#654C30;
+  color: beige;
+  padding: 5px 5px 5px;
+  
+}
+
+h1 {
+    color: black;
+    text-align: center;
+}
+
+h2 {
+  text-align: center;
+  letter-spacing: 2px;
+  /* border-radius: 35px; */
+  /* background-color: whitesmoke; */
+  padding: 0;
+  /* border: solid 1px; */
+  /* width: 100%; */
+  /* box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); */
+}
+/* 
+h2:hover {
+  background: linear-gradient(to right, #770c0c9f, #fc05059f, #770c0c9f);    
+  color: black;
+} */
+
+.dropbtn {
+    background-color:#654C30;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+  
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #e2c8a9;
+  /* background-color: #c6e1ecfd; */
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #373435;
+}
+
+/* Estilos do submenu */
+.submenu {
+  position: relative;
+}
+
+.submenu-content {
+  display: none;
+  position: absolute;
+  left: 100%; /* Aparecerá à direita do item pai */
+  top: 0;
+  background-color: #f0dac1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.submenu-content a {
+  padding: 12px 16px;
+  display: block;
+}
+
+.submenu:hover .submenu-content {
+  display: block;
+}
+
+/* fim do menu dropDown */
+
+/* inserindo do Vila do Povo */
+
+.project-item, .comentarios-item {
+  background-color: #f9f9f9;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.185);    
+}
+
+iframe {
+  width: 100%;
+  height: 500px;
+  margin-top: 20px;
+  border: none;
+}
+
+.video-container {
+  width: 100%; /* Ajuste conforme necessário */
+  margin: 0 auto;
+  border: 2px solid rgba(37, 175, 230, 0.596); /* Opção de borda */
+  gap: 2rem;
+  padding: 10px;
+  background-color: rgba(37, 175, 230, 0.178);
+  text-align: center;
+  /* display: none; */
+}
+
+video {
+  width: 100%;
+  height: auto;
+}
+
+.bordaTitulo {
+  width: 100%;
+  letter-spacing: 2px;
+  border: 2px solid rgba(37, 175, 230, 0.596); /* Opção de borda */
+  color: black;
+  border-radius: 50px; /* Bordas arredondadas */
+  background-color: rgba(37, 175, 230, 0.178);
+  box-shadow: 2px 3px 15px 2px rgba(58, 34, 7, 0.329);    
+}
+
+
+/* fim Vila do Povo */
+
+.item {
+    /* letter-spacing: 2px; */
+    font-family: Arial, Helvetica, sans-serif;
+    border: 1px solid cornsilk;
+    background-color: black;
+    box-shadow: 0px 8px 22px rgba(0, 0, 0, 0.842); /* Sombra mais intensa ao passar o mouse */    
+    color: cornsilk;
+    text-align: center;
+    padding: 20px;
+    margin: 5px;
+    width: 40%;
+}
+
+.container {
+  max-width: 800px;  
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  /* height: 100vh; */
+  padding: 10px;
+  box-shadow: 2px 3px 15px 2px rgba(58, 34, 7, 0.329);    
+}
+
+img {
+  max-width: 90px; /* Ajuste o tamanho conforme necessário */
+  box-shadow: 2px 3px 15px 2px rgba(58, 34, 7, 0.329);    
+}
+
+/* aumenta a imagem quando passa o mouse em cima dela */
+/* img:hover {
+  transform: scale(2.5); 
+} */
+
+.imgFormat {
+  max-width: 300px; /* Ajuste o tamanho conforme necessário */
+  box-shadow: 2px 3px 15px 2px rgba(58, 34, 7, 0.329);    
+}
+
+/* aumenta a imagem quando passa o mouse em cima dela */
+/* .imgFormat:hover {
+  transform: scale(1.5);
+} */
+
+footer {  
+  letter-spacing: 2px;
+  text-align: center;
+  background-color: #472a09;
+  color: white;
+  box-shadow: 2px -3px 15px 2px rgba(58, 34, 7, 0.329);    
+}
+
